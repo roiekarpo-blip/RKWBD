@@ -517,3 +517,17 @@ export function useTicker(active: boolean): number {
   }, [active])
   return tick
 }
+
+/**
+ * חותמת זמן שמתעדכנת בקצב קבוע.
+ * בלי זה, משכי זמן שכוללים טיימר שרץ היו "נתקעים" על הערך של הרינדור האחרון
+ * ומתעדכנים רק במקרה, כשמשהו אחר גורם לרינדור מחדש.
+ */
+export function useNow(intervalMs = 30_000): number {
+  const [now, setNow] = useState(() => Date.now())
+  useEffect(() => {
+    const id = window.setInterval(() => setNow(Date.now()), intervalMs)
+    return () => window.clearInterval(id)
+  }, [intervalMs])
+  return now
+}

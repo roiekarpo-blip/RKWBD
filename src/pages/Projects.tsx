@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Card, Empty, Progress } from '../components/ui'
 import { ClientDot, DueBadge, StatusBadge } from '../components/bits'
 import { ProjectModal } from '../components/modals'
@@ -24,7 +24,7 @@ export function ProjectsPage({ navigate }: { navigate: (route: Route) => void })
   const { data, startTimer } = useStore()
   const [filter, setFilter] = useState<Filter>('open')
   const [modal, setModal] = useState(false)
-  const now = Date.now()
+  const now = useNow()
 
   const rows = useMemo(() => {
     return data.projects

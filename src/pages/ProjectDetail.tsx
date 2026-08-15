@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore, useRunningTimer } from '../store'
+import { useNow, useRunningTimer, useStore } from '../store'
 import { Card, CardHead, Empty, Field, Modal, Progress, Stat } from '../components/ui'
 import { ClientDot, DueBadge, PriorityBadge, StatusBadge } from '../components/bits'
 import {
@@ -57,7 +57,7 @@ export function ProjectDetailPage({
   const [saveAsTemplate, setSaveAsTemplate] = useState(false)
   const [hideDone, setHideDone] = useState(false)
 
-  const now = Date.now()
+  const now = useNow()
   const project = data.projects.find((p) => p.id === projectId)
 
   const tasks = useMemo(

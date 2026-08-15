@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+# ביטול ריצה קודמת כשנדחף קומיט חדש לאותו ענף
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: בדיקות ובנייה
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: התקנת תלויות
+        run: npm ci
+
+      - name: בדיקת טיפוסים
+        run: npm run typecheck
+
+      - name: בדיקת סגנון קוד
+        run: npm run lint
+
+      - name: הרצת בדיקות
+        run: npm run test
+
+      - name: בנייה לפרודקשן
+        run: npm run build
+
+      - name: העלאת תוצר הבנייה
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist
+          retention-days: 7

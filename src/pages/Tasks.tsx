@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Card, CardHead, Empty } from '../components/ui'
 import { ClientDot, DueBadge, PriorityBadge } from '../components/bits'
 import { entriesForTask, openTasksSorted, sumMinutes } from '../lib/selectors'
@@ -13,7 +13,7 @@ export function TasksPage({ navigate }: { navigate: (route: Route) => void }) {
   const { data, toggleTask, startTimer } = useStore()
   const [grouping, setGrouping] = useState<Grouping>('client')
   const [clientFilter, setClientFilter] = useState('')
-  const now = Date.now()
+  const now = useNow()
 
   const tasks = useMemo(() => {
     const open = openTasksSorted(data)

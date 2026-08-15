@@ -10,8 +10,26 @@ import { TimeLogPage } from './pages/TimeLog'
 import { ReportsPage } from './pages/Reports'
 import { TemplatesPage } from './pages/Templates'
 import { SettingsPage } from './pages/Settings'
+import { PwaPrompts, useIsStandalone } from './components/PwaPrompts'
+import { ErrorBoundary } from './components/ErrorBoundary'
 import { hashToRoute, routeToHash, type Route } from './routes'
 import { openTasksSorted } from './lib/selectors'
+
+/** מציג חיווי כשאין רשת — האפליקציה ממשיכה לעבוד, וכדאי שהמשתמש ידע שזה מכוון */
+function useIsOffline(): boolean {
+  const [offline, setOffline] = useState(() => !navigator.onLine)
+  useEffect(() => {
+    const on = () => setOffline(false)
+    const off = () => setOffline(true)
+    window.addEventListener('online', on)
+    window.addEventListener('offline', off)
+    return () => {
+      window.removeEventListener('online', on)
+      window.removeEventListener('offline', off)
+    }
+  }, [])
+  return offline
+}
 
 const NAV: { route: Route; label: string; icon: string }[] = [
   { route: { name: 'dashboard' }, label: 'סקירה', icon: '🏠' },
@@ -41,6 +59,8 @@ function Shell() {
   }, [])
 
   const openTaskCount = useMemo(() => openTasksSorted(data).length, [data])
+  const offline = useIsOffline()
+  const standalone = useIsStandalone()
 
   const page = (() => {
     switch (route.name) {
@@ -97,21 +117,32 @@ function Shell() {
           </button>
         ))}
 
-        <div className="sidebar-footer">הנתונים נשמרים בדפדפן שלך בלבד</div>
+        <div className="sidebar-footer">
+          {offline ? '⚡ מצב אופליין — הכל עובד כרגיל' : 'הנתונים נשמרים בדפדפן שלך בלבד'}
+        </div>
       </nav>
 
-      <main className="main">
+      <main className={`main ${standalone ? 'standalone' : ''}`}>
+        {offline && (
+          <div className="offline-strip" role="status">
+            ⚡ אין חיבור לאינטרנט — האפליקציה ממשיכה לעבוד והנתונים נשמרים במכשיר
+          </div>
+        )}
         <TimerBar onOpenProject={(id) => navigate({ name: 'project', id })} />
         {page}
       </main>
+
+      <PwaPrompts />
     </div>
   )
 }
 
 export default function App() {
   return (
-    <StoreProvider>
-      <Shell />
-    </StoreProvider>
+    <ErrorBoundary>
+      <StoreProvider>
+        <Shell />
+      </StoreProvider>
+    </ErrorBoundary>
   )
 }

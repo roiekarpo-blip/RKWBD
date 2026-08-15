@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Card, CardHead, Empty, Stat } from '../components/ui'
 import { ClientDot } from '../components/bits'
 import { ConfirmModal, TimeEntryModal } from '../components/modals'
@@ -24,7 +24,7 @@ export function TimeLogPage() {
   const [modal, setModal] = useState(false)
   const [editing, setEditing] = useState<TimeEntry | undefined>()
   const [confirmDelete, setConfirmDelete] = useState<TimeEntry | undefined>()
-  const now = Date.now()
+  const now = useNow()
 
   const entries = useMemo(() => {
     const config = RANGES.find((r) => r.key === range)!

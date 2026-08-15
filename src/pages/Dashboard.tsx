@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Bars, Card, CardHead, Empty, Progress, Stat } from '../components/ui'
 import { ClientDot, DueBadge } from '../components/bits'
 import { TimeEntryModal } from '../components/modals'
@@ -15,7 +15,7 @@ import type { Route } from '../routes'
 export function Dashboard({ navigate }: { navigate: (route: Route) => void }) {
   const { data, startTimer, toggleTask } = useStore()
   const [timeModal, setTimeModal] = useState(false)
-  const now = Date.now()
+  const now = useNow()
 
   const stats = useMemo(() => {
     const activeProjects = data.projects.filter(

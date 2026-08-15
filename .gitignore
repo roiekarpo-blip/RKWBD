@@ -9,3 +9,5 @@ dist-ssr
 *.log
 npm-debug.log*
 *.tsbuildinfo
+dev-dist
+coverage

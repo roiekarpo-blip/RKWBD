@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Bars, Card, CardHead, Empty, HBar, Stat } from '../components/ui'
 import { StatusBadge } from '../components/bits'
 import { entryMinutes, projectStats } from '../lib/selectors'
@@ -19,7 +19,7 @@ type Scope = 'all' | 'done' | 'open'
 export function ReportsPage() {
   const { data } = useStore()
   const [scope, setScope] = useState<Scope>('all')
-  const now = Date.now()
+  const now = useNow()
   const currency = data.settings.currency
 
   const report = useMemo(() => {

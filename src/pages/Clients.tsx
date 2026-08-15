@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react'
-import { useStore } from '../store'
+import { useNow, useStore } from '../store'
 import { Card, CardHead, Empty, Progress, Stat } from '../components/ui'
 import { ClientDot, DueBadge, StatusBadge } from '../components/bits'
 import { ClientModal, ConfirmModal, ProjectModal } from '../components/modals'
@@ -11,7 +11,7 @@ export function ClientsPage({ navigate }: { navigate: (route: Route) => void }) 
   const { data } = useStore()
   const [modal, setModal] = useState(false)
   const [search, setSearch] = useState('')
-  const now = Date.now()
+  const now = useNow()
 
   const rows = useMemo(() => {
     const term = search.trim().toLowerCase()
@@ -114,7 +114,7 @@ export function ClientDetailPage({
   const [editing, setEditing] = useState(false)
   const [newProject, setNewProject] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
-  const now = Date.now()
+  const now = useNow()
 
   const client = data.clients.find((c) => c.id === clientId)
 
