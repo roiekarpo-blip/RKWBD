@@ -1,0 +1,105 @@
+import type { Template } from '../types'
+
+/**
+ * תבניות מובנות — רשימת המשימות שחוזרת על עצמה בכל פרויקט.
+ * אפשר להחיל תבנית על פרויקט חדש ולקבל את כל המשימות מוכנות,
+ * ואפשר ליצור תבניות משלך במסך "תבניות".
+ */
+export const BUILTIN_TEMPLATES: Template[] = [
+  {
+    id: 'tpl-website-full',
+    name: 'אתר תדמית מלא',
+    description: 'תהליך מלא מאפיון ועד עלייה לאוויר — מתאים לאתר תדמית של 5-8 עמודים',
+    builtin: true,
+    items: [
+      { title: 'שיחת אפיון עם הלקוח', stage: 'אפיון', estimateMinutes: 60, priority: 'high' },
+      { title: 'מסמך אפיון ואישור מול הלקוח', stage: 'אפיון', estimateMinutes: 120, priority: 'high' },
+      { title: 'איסוף חומרים מהלקוח (לוגו, תמונות, טקסטים)', stage: 'אפיון', estimateMinutes: 45, priority: 'high' },
+      { title: 'מחקר מתחרים והשראה', stage: 'אפיון', estimateMinutes: 60 },
+      { title: 'מפת אתר ומבנה עמודים', stage: 'אפיון', estimateMinutes: 60 },
+
+      { title: 'סקיצת wireframe לעמוד הבית', stage: 'עיצוב', estimateMinutes: 90 },
+      { title: 'עיצוב עמוד הבית', stage: 'עיצוב', estimateMinutes: 240, priority: 'high' },
+      { title: 'עיצוב עמודים פנימיים', stage: 'עיצוב', estimateMinutes: 180 },
+      { title: 'התאמת עיצוב למובייל', stage: 'עיצוב', estimateMinutes: 120 },
+      { title: 'סבב תיקוני עיצוב מול הלקוח', stage: 'עיצוב', estimateMinutes: 90 },
+      { title: 'אישור עיצוב סופי', stage: 'עיצוב', estimateMinutes: 30, priority: 'high' },
+
+      { title: 'הקמת סביבת פיתוח ודומיין זמני', stage: 'פיתוח', estimateMinutes: 45 },
+      { title: 'בניית עמוד הבית', stage: 'פיתוח', estimateMinutes: 300, priority: 'high' },
+      { title: 'בניית עמודים פנימיים', stage: 'פיתוח', estimateMinutes: 240 },
+      { title: 'טפסי יצירת קשר וחיבור למייל', stage: 'פיתוח', estimateMinutes: 90 },
+      { title: 'התאמה לרספונסיביות (מובייל/טאבלט)', stage: 'פיתוח', estimateMinutes: 120 },
+      { title: 'הזנת תכנים סופיים', stage: 'פיתוח', estimateMinutes: 120 },
+
+      { title: 'הגדרות SEO בסיסיות (כותרות, תיאורים, alt)', stage: 'לפני עלייה', estimateMinutes: 90 },
+      { title: 'חיבור Google Analytics / Search Console', stage: 'לפני עלייה', estimateMinutes: 45 },
+      { title: 'בדיקת מהירות ואופטימיזציית תמונות', stage: 'לפני עלייה', estimateMinutes: 60 },
+      { title: 'בדיקת תקינות בכל הדפדפנים', stage: 'לפני עלייה', estimateMinutes: 60 },
+      { title: 'הצהרת נגישות ובדיקת נגישות', stage: 'לפני עלייה', estimateMinutes: 90, priority: 'high' },
+      { title: 'גיבוי ואישור SSL', stage: 'לפני עלייה', estimateMinutes: 30 },
+
+      { title: 'העלאה לאוויר וחיבור דומיין', stage: 'עלייה לאוויר', estimateMinutes: 60, priority: 'high' },
+      { title: 'בדיקות אחרי עלייה', stage: 'עלייה לאוויר', estimateMinutes: 45 },
+      { title: 'הדרכת לקוח על ניהול האתר', stage: 'מסירה', estimateMinutes: 60 },
+      { title: 'מסירת הרשאות וסיסמאות', stage: 'מסירה', estimateMinutes: 30 },
+      { title: 'שליחת חשבונית וסגירת תשלום', stage: 'מסירה', estimateMinutes: 20, priority: 'high' },
+    ],
+  },
+  {
+    id: 'tpl-landing',
+    name: 'דף נחיתה',
+    description: 'פרויקט קצר — דף נחיתה בודד עם טופס והטמעת פיקסלים',
+    builtin: true,
+    items: [
+      { title: 'שיחת אפיון והגדרת מטרת הדף', stage: 'אפיון', estimateMinutes: 45, priority: 'high' },
+      { title: 'איסוף חומרים ותכנים', stage: 'אפיון', estimateMinutes: 30 },
+      { title: 'כתיבת מסרים ומבנה הדף', stage: 'אפיון', estimateMinutes: 60 },
+      { title: 'עיצוב הדף', stage: 'עיצוב', estimateMinutes: 180, priority: 'high' },
+      { title: 'סבב תיקונים מול הלקוח', stage: 'עיצוב', estimateMinutes: 60 },
+      { title: 'בניית הדף', stage: 'פיתוח', estimateMinutes: 180, priority: 'high' },
+      { title: 'טופס לידים וחיבור למערכת דיוור', stage: 'פיתוח', estimateMinutes: 90 },
+      { title: 'הטמעת פיקסלים (Meta / Google)', stage: 'פיתוח', estimateMinutes: 45 },
+      { title: 'התאמה למובייל', stage: 'פיתוח', estimateMinutes: 60 },
+      { title: 'בדיקת מהירות ונגישות', stage: 'לפני עלייה', estimateMinutes: 45 },
+      { title: 'עלייה לאוויר', stage: 'עלייה לאוויר', estimateMinutes: 45, priority: 'high' },
+      { title: 'שליחת חשבונית', stage: 'מסירה', estimateMinutes: 15 },
+    ],
+  },
+  {
+    id: 'tpl-ecommerce',
+    name: 'חנות אונליין',
+    description: 'הקמת חנות — קטלוג, סליקה, משלוחים ובדיקות רכישה',
+    builtin: true,
+    items: [
+      { title: 'אפיון קטגוריות ומוצרים', stage: 'אפיון', estimateMinutes: 120, priority: 'high' },
+      { title: 'איסוף קטלוג מוצרים ותמונות', stage: 'אפיון', estimateMinutes: 90, priority: 'high' },
+      { title: 'בחירת פלטפורמה ותוספים', stage: 'אפיון', estimateMinutes: 60 },
+      { title: 'עיצוב עמוד הבית והקטגוריה', stage: 'עיצוב', estimateMinutes: 300 },
+      { title: 'עיצוב עמוד מוצר ועגלה', stage: 'עיצוב', estimateMinutes: 180, priority: 'high' },
+      { title: 'הקמת החנות והתקנת תבנית', stage: 'פיתוח', estimateMinutes: 120 },
+      { title: 'הזנת מוצרים ומלאי', stage: 'פיתוח', estimateMinutes: 300 },
+      { title: 'חיבור סליקה וחשבוניות', stage: 'פיתוח', estimateMinutes: 120, priority: 'high' },
+      { title: 'הגדרת משלוחים ואזורי חלוקה', stage: 'פיתוח', estimateMinutes: 90 },
+      { title: 'הגדרת מיילים אוטומטיים ללקוח', stage: 'פיתוח', estimateMinutes: 60 },
+      { title: 'בדיקת תהליך רכישה מקצה לקצה', stage: 'לפני עלייה', estimateMinutes: 90, priority: 'high' },
+      { title: 'נגישות ותקנון החנות', stage: 'לפני עלייה', estimateMinutes: 90 },
+      { title: 'עלייה לאוויר וחיבור דומיין', stage: 'עלייה לאוויר', estimateMinutes: 60, priority: 'high' },
+      { title: 'הדרכת לקוח על ניהול הזמנות', stage: 'מסירה', estimateMinutes: 90 },
+    ],
+  },
+  {
+    id: 'tpl-maintenance',
+    name: 'תחזוקה חודשית',
+    description: 'ריטיינר — משימות שחוזרות כל חודש ללקוח קיים',
+    builtin: true,
+    items: [
+      { title: 'עדכון גרסאות ותוספים', stage: 'תחזוקה', estimateMinutes: 45, priority: 'high' },
+      { title: 'בדיקת גיבויים', stage: 'תחזוקה', estimateMinutes: 20 },
+      { title: 'סריקת אבטחה', stage: 'תחזוקה', estimateMinutes: 30 },
+      { title: 'בדיקת טפסים ותקינות האתר', stage: 'תחזוקה', estimateMinutes: 20 },
+      { title: 'עדכוני תוכן שביקש הלקוח', stage: 'תחזוקה', estimateMinutes: 90 },
+      { title: 'דוח חודשי ללקוח', stage: 'תחזוקה', estimateMinutes: 30 },
+    ],
+  },
+]
