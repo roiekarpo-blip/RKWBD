@@ -11,3 +11,4 @@ npm-debug.log*
 *.tsbuildinfo
 dev-dist
 coverage
+design/brief.html
