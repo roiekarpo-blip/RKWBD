@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;600;700;800&family=Suez+One&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #FAF3E7; color: #1A1210; font-family: 'Assistant', 'Segoe UI', sans-serif; }
+    h1, h2, h3 { font-family: 'Suez One', Georgia, serif; font-weight: 400; margin: 0; letter-spacing: -0.015em; line-height: 1.12; }
+    p { margin: 0; text-wrap: pretty; }
+    a { color: #C0311B; text-decoration: none; }
+    a:hover { color: #8E2213; }
+    .wrap { max-width: 1160px; margin: 0 auto; padding: 0 40px; }
+  </style>
+</helmet>
+
+<div dir="rtl" lang="he" style="width: 1440px; background: #FAF3E7;">
+
+  <!-- announcement -->
+  <div style="background: #1A1210; color: #F2E4CC; font-size: 14px; letter-spacing: 0.01em;">
+    <div class="wrap" style="height: 44px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <span style="color: #E4A94F;">משלוח חינם בהזמנה מעל ₪150</span>
+        <span style="opacity: .35;">|</span>
+        <span style="opacity: .8;">איסוף עצמי מ[אזור]</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px; opacity: .8;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#F2E4CC" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.1" fill="#F2E4CC" stroke="none"></circle></svg>
+        <span>@saraharifim.il</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- header -->
+  <div style="background: #FAF3E7; border-bottom: 1px solid rgba(26,18,16,.10);">
+    <div class="wrap" style="height: 84px; display: flex; align-items: center; gap: 40px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <svg width="38" height="38" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#C0311B"></circle><path d="M20 9.5c4.6 4.9 7.4 8.2 7.4 12.3A7.4 7.4 0 0 1 20 29.2a7.4 7.4 0 0 1-7.4-7.4c0-4.1 2.8-7.4 7.4-12.3z" fill="#FAF3E7"></path><path d="M20 18.4c1.9 2 3 3.5 3 5.2a3 3 0 1 1-6 0c0-1.7 1.1-3.2 3-5.2z" fill="#C0311B"></path></svg>
+        <div style="display: flex; flex-direction: column; gap: 1px;">
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 22px; line-height: 1;">שרה חריפים</span>
+          <span style="font-size: 11px; letter-spacing: .18em; opacity: .55;">HANDMADE HOT SAUCE</span>
+        </div>
+      </div>
+      <div style="display: flex; align-items: center; gap: 28px; font-size: 16px; font-weight: 600; flex-grow: 1;">
+        <span style="color: #1A1210; border-bottom: 2px solid #C0311B; padding-bottom: 3px;">בית</span>
+        <span style="color: #1A1210; opacity: .72;">החנות</span>
+        <span style="color: #1A1210; opacity: .72;">מארזי מתנה</span>
+        <span style="color: #1A1210; opacity: .72;">הסיפור שלנו</span>
+        <span style="color: #1A1210; opacity: .72;">יצירת קשר</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 18px; border: 1.5px solid rgba(26,18,16,.20); border-radius: 999px; font-size: 15px; font-weight: 600;">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1A1210" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h2.2l2 11h9.4l2-8H6.2"></path><circle cx="9" cy="19" r="1.4"></circle><circle cx="17" cy="19" r="1.4"></circle></svg>
+          <span>הסל</span>
+          <span style="background: #C0311B; color: #fff; font-size: 12px; width: 20px; height: 20px; border-radius: 999px; display: flex; align-items: center; justify-content: center;">2</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 20px; background: #3F6B2E; color: #FAF3E7; border-radius: 999px; font-size: 15px; font-weight: 700;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#FAF3E7"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.4 4.8 5-1.3A9.8 9.8 0 1 0 12 2.2zm0 2a7.8 7.8 0 1 1-4 14.5l-.4-.2-2.6.7.7-2.5-.2-.4A7.8 7.8 0 0 1 12 4.2z"></path><path d="M9.2 7.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.4.5c-.1.2-.2.3 0 .6a7 7 0 0 0 3 2.6c.3.1.4 0 .6-.1l.5-.6c.2-.2.3-.2.6-.1l1.6.8c.3.1.4.2.5.4 0 .2 0 .9-.3 1.4-.3.5-1.2.9-1.7.9-1.2 0-3-.6-4.6-2.1-1.6-1.5-2.6-3.4-2.7-4.6-.1-.9.3-1.5.5-1.7z"></path></svg>
+          <span>הזמנה בוואטסאפ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="wrap" style="padding-top: 72px; padding-bottom: 88px;">
+    <div style="display: grid; grid-template-columns: 1.02fr 0.98fr; gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 26px;">
+        <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: .14em; color: #8E2213;">
+          <span style="width: 26px; height: 2px; background: #C0311B;"></span>
+          <span>מטבח ביתי · [אזור השירות]</span>
+        </div>
+        <h1 style="font-size: 62px;">סחוג ורטבים חריפים<br>בעבודת יד</h1>
+        <p style="font-size: 20px; line-height: 1.65; color: rgba(26,18,16,.78); max-width: 520px;">נטחנים טרי כל שבוע במטבח של שרה — פלפל, שום ותבלינים שלמים, בלי חומרים משמרים ובלי קיצורי דרך. חמש רמות חריפות, מהעדין ועד לאש.</p>
+        <div style="display: flex; align-items: center; gap: 14px; padding-top: 6px;">
+          <div style="display: flex; align-items: center; gap: 10px; height: 60px; padding: 0 34px; background: #C0311B; color: #FFF8EC; border-radius: 999px; font-size: 18px; font-weight: 700;">
+            <span>לחנות</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFF8EC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"></path></svg>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; height: 60px; padding: 0 28px; border: 1.5px solid rgba(26,18,16,.24); border-radius: 999px; font-size: 17px; font-weight: 600;">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="#3F6B2E"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.4 4.8 5-1.3A9.8 9.8 0 1 0 12 2.2zm0 2a7.8 7.8 0 1 1-4 14.5l-.4-.2-2.6.7.7-2.5-.2-.4A7.8 7.8 0 0 1 12 4.2z"></path><path d="M9.2 7.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.4.5c-.1.2-.2.3 0 .6a7 7 0 0 0 3 2.6c.3.1.4 0 .6-.1l.5-.6c.2-.2.3-.2.6-.1l1.6.8c.3.1.4.2.5.4 0 .2 0 .9-.3 1.4-.3.5-1.2.9-1.7.9-1.2 0-3-.6-4.6-2.1-1.6-1.5-2.6-3.4-2.7-4.6-.1-.9.3-1.5.5-1.7z"></path></svg>
+            <span>הזמנה בוואטסאפ</span>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 22px; padding-top: 18px; font-size: 15px; color: rgba(26,18,16,.65);">
+          <span>טרי כל שבוע</span>
+          <span style="width: 4px; height: 4px; border-radius: 999px; background: rgba(26,18,16,.30);"></span>
+          <span>ללא חומרים משמרים</span>
+          <span style="width: 4px; height: 4px; border-radius: 999px; background: rgba(26,18,16,.30);"></span>
+          <span>[כשרות]</span>
+          <span style="width: 4px; height: 4px; border-radius: 999px; background: rgba(26,18,16,.30);"></span>
+          <span>משלוח 2-3 ימי עסקים</span>
+        </div>
+      </div>
+
+      <div style="position: relative; background: #EFE0C6; border-radius: 28px; height: 490px; display: flex; align-items: flex-end; justify-content: center; overflow: hidden;">
+        <div style="position: absolute; top: -60px; left: -60px; width: 260px; height: 260px; border-radius: 999px; background: #E6D2B0;"></div>
+        <div style="position: absolute; bottom: -90px; right: -40px; width: 300px; height: 300px; border-radius: 999px; background: rgba(192,49,27,.10);"></div>
+        <div style="position: absolute; top: 26px; right: 26px; display: flex; flex-direction: column; align-items: center; gap: 2px; width: 92px; height: 92px; border-radius: 999px; background: #1A1210; color: #F2E4CC; justify-content: center;">
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 26px; line-height: 1;">5</span>
+          <span style="font-size: 11px; letter-spacing: .06em;">רמות חריפות</span>
+        </div>
+        <div style="position: relative; display: flex; align-items: flex-end; gap: 6px; padding-bottom: 54px;">
+          <svg width="132" height="180" viewBox="0 0 140 190"><ellipse cx="70" cy="183" rx="44" ry="6" fill="rgba(26,18,16,.12)"></ellipse><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#3F6B2E"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#3F6B2E"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+          <svg width="164" height="222" viewBox="0 0 140 190"><ellipse cx="70" cy="183" rx="44" ry="6" fill="rgba(26,18,16,.12)"></ellipse><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#C0311B"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#C0311B"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+          <svg width="132" height="180" viewBox="0 0 140 190"><ellipse cx="70" cy="183" rx="44" ry="6" fill="rgba(26,18,16,.12)"></ellipse><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#D68A15"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#D68A15"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- heat scale -->
+  <div style="background: #1A1210; color: #F2E4CC;">
+    <div class="wrap" style="padding-top: 54px; padding-bottom: 54px; display: flex; flex-direction: column; gap: 30px;">
+      <div style="display: flex; align-items: baseline; justify-content: space-between;">
+        <h2 style="font-size: 32px; color: #FAF3E7;">בוחרים רמת חריפות, לא מהמרים</h2>
+        <span style="font-size: 15px; opacity: .68;">כל מוצר מסומן בסולם של 1 עד 5</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px;">
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid rgba(242,228,204,.18); border-radius: 14px;">
+          <div style="display: flex; gap: 4px;"><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg></div>
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 20px; color: #FAF3E7;">עדין</span>
+          <span style="font-size: 14px; line-height: 1.5; opacity: .70;">טעם מלא, כמעט בלי עקיצה. גם לילדים.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid rgba(242,228,204,.18); border-radius: 14px;">
+          <div style="display: flex; gap: 4px;"><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg></div>
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 20px; color: #FAF3E7;">נעים</span>
+          <span style="font-size: 14px; line-height: 1.5; opacity: .70;">חום קליל שנשאר רגע ונעלם.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid rgba(242,228,204,.18); border-radius: 14px;">
+          <div style="display: flex; gap: 4px;"><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg></div>
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 20px; color: #FAF3E7;">חריף</span>
+          <span style="font-size: 14px; line-height: 1.5; opacity: .70;">הקלאסי של הבית. כף בצלחת ונגמר הסיפור.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid rgba(242,228,204,.18); border-radius: 14px;">
+          <div style="display: flex; gap: 4px;"><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(242,228,204,.20)"></path></svg></div>
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 20px; color: #FAF3E7;">בוער</span>
+          <span style="font-size: 14px; line-height: 1.5; opacity: .70;">לחובבי החריף. מומלץ בכפית, לא בכף.</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid rgba(228,169,79,.55); border-radius: 14px; background: rgba(192,49,27,.16);">
+          <div style="display: flex; gap: 4px;"><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg><svg width="17" height="17" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg></div>
+          <span style="font-family: 'Suez One', Georgia, serif; font-size: 20px; color: #FAF3E7;">אש</span>
+          <span style="font-size: 14px; line-height: 1.5; opacity: .78;">בכמות קטנה. אנחנו לא אחראים.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- bestsellers -->
+  <div class="wrap" style="padding-top: 88px; padding-bottom: 88px;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 34px;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: .14em; color: #8E2213;">הכי נמכרים</span>
+        <h2 style="font-size: 42px;">מה שנגמר אצלנו הכי מהר</h2>
+      </div>
+      <span style="font-size: 17px; font-weight: 700; color: #C0311B;">לכל המוצרים ←</span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;">
+
+      <div style="display: flex; flex-direction: column; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px; overflow: hidden;">
+        <div style="position: relative; background: #EDE5D2; height: 226px; display: flex; align-items: center; justify-content: center;">
+          <span style="position: absolute; top: 14px; right: 14px; background: #1A1210; color: #F2E4CC; font-size: 12px; font-weight: 700; padding: 5px 11px; border-radius: 999px;">מס׳ 1</span>
+          <svg width="112" height="152" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#3F6B2E"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#3F6B2E"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px;">
+          <h3 style="font-size: 23px;">סחוג ירוק תימני</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: rgba(26,18,16,.66);">פלפל ירוק, כוסברה, שום והל. הסחוג של סבתא, בלי שינויים.</p>
+          <div style="display: flex; align-items: center; gap: 4px;"><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><span style="font-size: 13px; color: rgba(26,18,16,.55); margin-right: 6px;">חריף</span></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 6px;">
+            <div style="display: flex; align-items: baseline; gap: 6px;"><span style="font-family: 'Suez One', Georgia, serif; font-size: 25px;">₪34</span><span style="font-size: 13px; color: rgba(26,18,16,.55);">250 מ״ל</span></div>
+            <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 18px; background: #1A1210; color: #FAF3E7; border-radius: 999px; font-size: 15px; font-weight: 700;">הוספה לסל</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px; overflow: hidden;">
+        <div style="position: relative; background: #EDE5D2; height: 226px; display: flex; align-items: center; justify-content: center;">
+          <svg width="112" height="152" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#C0311B"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#C0311B"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px;">
+          <h3 style="font-size: 23px;">סחוג אדום שרוף</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: rgba(26,18,16,.66);">פלפלים אדומים קלויים על אש פתוחה, כמון ושום.</p>
+          <div style="display: flex; align-items: center; gap: 4px;"><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><span style="font-size: 13px; color: rgba(26,18,16,.55); margin-right: 6px;">בוער</span></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 6px;">
+            <div style="display: flex; align-items: baseline; gap: 6px;"><span style="font-family: 'Suez One', Georgia, serif; font-size: 25px;">₪34</span><span style="font-size: 13px; color: rgba(26,18,16,.55);">250 מ״ל</span></div>
+            <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 18px; background: #1A1210; color: #FAF3E7; border-radius: 999px; font-size: 15px; font-weight: 700;">הוספה לסל</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px; overflow: hidden;">
+        <div style="position: relative; background: #EDE5D2; height: 226px; display: flex; align-items: center; justify-content: center;">
+          <span style="position: absolute; top: 14px; right: 14px; background: #3F6B2E; color: #FAF3E7; font-size: 12px; font-weight: 700; padding: 5px 11px; border-radius: 999px;">חדש</span>
+          <svg width="112" height="152" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="52" y="23" width="36" height="9" rx="3" fill="#3B2A23"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#D68A15"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect><rect x="44" y="108" width="52" height="7" rx="3.5" fill="#D68A15"></rect><rect x="44" y="122" width="32" height="5" rx="2.5" fill="rgba(26,18,16,.40)"></rect><rect x="38" y="44" width="7" height="90" rx="3.5" fill="#fff" opacity=".38"></rect></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px;">
+          <h3 style="font-size: 23px;">חריסה מרוקאית</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: rgba(26,18,16,.66);">פלפל חריף מיובש, שמן זית ותבלינים שנטחנים במכתש.</p>
+          <div style="display: flex; align-items: center; gap: 4px;"><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#C0311B"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><svg width="15" height="15" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="rgba(26,18,16,.16)"></path></svg><span style="font-size: 13px; color: rgba(26,18,16,.55); margin-right: 6px;">נעים</span></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 6px;">
+            <div style="display: flex; align-items: baseline; gap: 6px;"><span style="font-family: 'Suez One', Georgia, serif; font-size: 25px;">₪38</span><span style="font-size: 13px; color: rgba(26,18,16,.55);">200 מ״ל</span></div>
+            <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 18px; background: #1A1210; color: #FAF3E7; border-radius: 999px; font-size: 15px; font-weight: 700;">הוספה לסל</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: flex; flex-direction: column; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px; overflow: hidden;">
+        <div style="position: relative; background: #E6D2B0; height: 226px; display: flex; align-items: center; justify-content: center; gap: 2px;">
+          <svg width="68" height="92" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#3F6B2E"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg>
+          <svg width="68" height="92" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#C0311B"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg>
+          <svg width="68" height="92" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#D68A15"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; padding: 20px;">
+          <h3 style="font-size: 23px;">מארז הטעימות</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: rgba(26,18,16,.66);">שלוש צנצנות קטנות לבחירה. המתנה הכי בטוחה למי שאוהב חריף.</p>
+          <div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 13px; font-weight: 700; color: #3F6B2E; background: rgba(63,107,46,.12); padding: 4px 10px; border-radius: 999px;">חיסכון ₪12</span></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; padding-top: 6px;">
+            <div style="display: flex; align-items: baseline; gap: 6px;"><span style="font-family: 'Suez One', Georgia, serif; font-size: 25px;">₪89</span><span style="font-size: 13px; color: rgba(26,18,16,.45); text-decoration: line-through;">₪101</span></div>
+            <div style="display: flex; align-items: center; justify-content: center; height: 44px; padding: 0 18px; background: #C0311B; color: #FFF8EC; border-radius: 999px; font-size: 15px; font-weight: 700;">הרכבת מארז</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- story -->
+  <div style="background: #2A1D18; color: #F2E4CC;">
+    <div class="wrap" style="padding-top: 84px; padding-bottom: 84px;">
+      <div style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 60px; align-items: center;">
+        <div style="border: 2px dashed rgba(242,228,204,.35); border-radius: 20px; height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;">
+          <svg width="86" height="86" viewBox="0 0 24 24" fill="none" stroke="rgba(242,228,204,.45)" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="15" rx="3"></rect><circle cx="12" cy="12.2" r="3.6"></circle><path d="M8 5l1.4-2h5.2L16 5"></path></svg>
+          <span style="font-size: 15px; opacity: .6;">[תמונה: שרה במטבח, מכינה סחוג]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 26px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: .14em; color: #E4A94F;">הסיפור שלנו</span>
+          <h2 style="font-size: 40px; color: #FAF3E7;">התחלנו מצנצנת אחת שהבאתי לשכנה. היום זה מגיע לכל הארץ.</h2>
+          <p style="font-size: 17.5px; line-height: 1.72; opacity: .82;">אני שרה. כל צנצנת פה נטחנת אצלי במטבח, בסירים קטנים, מפלפלים שנקנים באותו בוקר בשוק. אני לא מוסיפה חומרים משמרים, לא צבעי מאכל ולא מים — רק פלפל, שום, תבלינים ושמן.</p>
+          <p style="font-size: 17.5px; line-height: 1.72; opacity: .82;">בגלל זה הכמות מוגבלת: מה שנטחן ביום ראשון נשלח ביום שלישי, ומה שנגמר — נגמר עד השבוע הבא.</p>
+          <div style="display: flex; align-items: center; gap: 16px; padding-top: 8px;">
+            <span style="font-family: 'Suez One', Georgia, serif; font-size: 30px; color: #E4A94F;">שרה</span>
+            <span style="width: 44px; height: 1px; background: rgba(242,228,204,.35);"></span>
+            <span style="font-size: 15px; opacity: .7;">מייסדת ומי שטוחנת</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- how it works -->
+  <div class="wrap" style="padding-top: 84px; padding-bottom: 84px;">
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px;">
+      <span style="font-size: 13px; font-weight: 700; letter-spacing: .14em; color: #8E2213;">איך מזמינים</span>
+      <h2 style="font-size: 40px;">שלוש דרכים להזמין. אותו חריף.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px;">
+        <div style="width: 48px; height: 48px; border-radius: 999px; background: #C0311B; color: #FFF8EC; display: flex; align-items: center; justify-content: center; font-family: 'Suez One', Georgia, serif; font-size: 22px;">1</div>
+        <h3 style="font-size: 24px;">קונים באתר בכרטיס אשראי</h3>
+        <p style="font-size: 15.5px; line-height: 1.6; color: rgba(26,18,16,.68);">מוסיפים לסל, משלמים בכרטיס או בביט, ומקבלים אישור למייל. הכי מהיר.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px;">
+        <div style="width: 48px; height: 48px; border-radius: 999px; background: #3F6B2E; color: #FAF3E7; display: flex; align-items: center; justify-content: center; font-family: 'Suez One', Georgia, serif; font-size: 22px;">2</div>
+        <h3 style="font-size: 24px;">שולחים הזמנה בוואטסאפ</h3>
+        <p style="font-size: 15.5px; line-height: 1.6; color: rgba(26,18,16,.68);">בוחרים באתר ולוחצים "הזמנה בוואטסאפ" — ההודעה נפתחת מוכנה עם כל הפרטים.</p>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 30px; background: #FFFCF5; border: 1px solid rgba(26,18,16,.10); border-radius: 20px;">
+        <div style="width: 48px; height: 48px; border-radius: 999px; background: #1A1210; color: #FAF3E7; display: flex; align-items: center; justify-content: center; font-family: 'Suez One', Georgia, serif; font-size: 22px;">3</div>
+        <h3 style="font-size: 24px;">ממלאים טופס הזמנה</h3>
+        <p style="font-size: 15.5px; line-height: 1.6; color: rgba(26,18,16,.68);">מעדיפים בלי אשראי ובלי וואטסאפ? משאירים פרטים ואנחנו חוזרים אליכם.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- testimonials -->
+  <div style="background: #F3E9D6;">
+    <div class="wrap" style="padding-top: 80px; padding-bottom: 80px;">
+      <h2 style="font-size: 40px; margin-bottom: 34px;">מה כותבים לנו</h2>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;">
+        <div style="display: flex; flex-direction: column; gap: 16px; padding: 28px; background: #FAF3E7; border-radius: 18px;">
+          <div style="display: flex; gap: 3px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg></div>
+          <p style="font-size: 17px; line-height: 1.65;">"הסחוג הירוק הזה הרס לי כל סחוג אחר. קניתי אחד, חזרתי אחרי שבוע לארבעה."</p>
+          <span style="font-size: 14px; color: rgba(26,18,16,.55);">— [שם לקוחה], [עיר]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px; padding: 28px; background: #FAF3E7; border-radius: 18px;">
+          <div style="display: flex; gap: 3px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg></div>
+          <p style="font-size: 17px; line-height: 1.65;">"הזמנתי בוואטסאפ בערב, קיבלתי תוך יומיים ארוז כמו מתנה. שירות של בן אדם."</p>
+          <span style="font-size: 14px; color: rgba(26,18,16,.55);">— [שם לקוח], [עיר]</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px; padding: 28px; background: #FAF3E7; border-radius: 18px;">
+          <div style="display: flex; gap: 3px;"><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg><svg width="17" height="17" viewBox="0 0 24 24" fill="#D68A15"><path d="M12 2.6l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5L12 17.4l-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z"></path></svg></div>
+          <p style="font-size: 17px; line-height: 1.65;">"לקחתי את מארז הטעימות לשבת אצל ההורים. יצאתי הכי טוב בשולחן."</p>
+          <span style="font-size: 14px; color: rgba(26,18,16,.55);">— [שם לקוחה], [עיר]</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- instagram -->
+  <div class="wrap" style="padding-top: 84px; padding-bottom: 84px;">
+    <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-bottom: 30px;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <h2 style="font-size: 40px;">מהאינסטגרם</h2>
+        <p style="font-size: 17px; color: rgba(26,18,16,.66);">כל טחינה, כל מנה וכל מתכון שאנחנו אוהבים — שם קודם.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 10px; height: 54px; padding: 0 26px; border: 1.5px solid #1A1210; border-radius: 999px; font-size: 16px; font-weight: 700;">
+        <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#1A1210" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="#1A1210" stroke="none"></circle></svg>
+        <span>@saraharifim.il</span>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px;">
+      <div style="aspect-ratio: 1; border-radius: 14px; background: #EDE5D2; display: flex; align-items: center; justify-content: center;"><svg width="72" height="98" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#3F6B2E"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg></div>
+      <div style="aspect-ratio: 1; border-radius: 14px; background: #E6D2B0; display: flex; align-items: center; justify-content: center;"><svg width="72" height="98" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#C0311B"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg></div>
+      <div style="aspect-ratio: 1; border-radius: 14px; background: #2A1D18; display: flex; align-items: center; justify-content: center;"><svg width="54" height="54" viewBox="0 0 24 24"><path d="M12 2.5c3.2 3.4 5.5 6 5.5 9.4A5.5 5.5 0 0 1 12 17.4a5.5 5.5 0 0 1-5.5-5.5c0-3.4 2.3-6 5.5-9.4z" fill="#E4A94F"></path></svg></div>
+      <div style="aspect-ratio: 1; border-radius: 14px; background: #EDE5D2; display: flex; align-items: center; justify-content: center;"><svg width="72" height="98" viewBox="0 0 140 190"><rect x="46" y="6" width="48" height="18" rx="6" fill="#2B1E19"></rect><rect x="28" y="30" width="84" height="150" rx="16" fill="#F3E9D6"></rect><rect x="34" y="58" width="72" height="116" rx="12" fill="#D68A15"></rect><rect x="34" y="96" width="72" height="48" rx="4" fill="#FAF3E7"></rect></svg></div>
+      <div style="aspect-ratio: 1; border-radius: 14px; background: rgba(192,49,27,.14); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border: 1px dashed rgba(26,18,16,.25);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="rgba(26,18,16,.45)" stroke-width="1.4"><rect x="2.5" y="5" width="19" height="15" rx="3"></rect><circle cx="12" cy="12.2" r="3.6"></circle></svg><span style="font-size: 12.5px; color: rgba(26,18,16,.55); text-align: center;">[פוסט מהעמוד]</span></div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div style="background: #1A1210; color: #F2E4CC;">
+    <div class="wrap" style="padding-top: 60px; padding-bottom: 34px;">
+      <div style="display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <svg width="34" height="34" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="#C0311B"></circle><path d="M20 9.5c4.6 4.9 7.4 8.2 7.4 12.3A7.4 7.4 0 0 1 20 29.2a7.4 7.4 0 0 1-7.4-7.4c0-4.1 2.8-7.4 7.4-12.3z" fill="#FAF3E7"></path></svg>
+            <span style="font-family: 'Suez One', Georgia, serif; font-size: 21px; color: #FAF3E7;">שרה חריפים</span>
+          </div>
+          <p style="font-size: 15px; line-height: 1.65; opacity: .72; max-width: 300px;">רטבים וחריפים בעבודת יד, נטחנים בכמויות קטנות ונשלחים טריים לכל הארץ.</p>
+          <div style="display: flex; gap: 10px;">
+            <div style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(242,228,204,.28); display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2E4CC" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.4" cy="6.6" r="1.2" fill="#F2E4CC" stroke="none"></circle></svg></div>
+            <div style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(242,228,204,.28); display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#F2E4CC"><path d="M12 2.2A9.8 9.8 0 0 0 3.6 17l-1.4 4.8 5-1.3A9.8 9.8 0 1 0 12 2.2zm0 2a7.8 7.8 0 1 1-4 14.5l-.4-.2-2.6.7.7-2.5-.2-.4A7.8 7.8 0 0 1 12 4.2z"></path></svg></div>
+            <div style="width: 40px; height: 40px; border-radius: 999px; border: 1px solid rgba(242,228,204,.28); display: flex; align-items: center; justify-content: center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F2E4CC" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="3"></rect><path d="M3.6 6.2L12 13l8.4-6.8"></path></svg></div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: .12em; color: #E4A94F;">החנות</span>
+          <span style="font-size: 15.5px; opacity: .78;">כל המוצרים</span>
+          <span style="font-size: 15.5px; opacity: .78;">סחוגים</span>
+          <span style="font-size: 15.5px; opacity: .78;">ממרחים</span>
+          <span style="font-size: 15.5px; opacity: .78;">מארזי מתנה</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: .12em; color: #E4A94F;">שירות</span>
+          <span style="font-size: 15.5px; opacity: .78;">משלוחים ואיסוף</span>
+          <span style="font-size: 15.5px; opacity: .78;">החזרות וביטולים</span>
+          <span style="font-size: 15.5px; opacity: .78;">שאלות נפוצות</span>
+          <span style="font-size: 15.5px; opacity: .78;">תקנון ופרטיות</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: .12em; color: #E4A94F;">יצירת קשר</span>
+          <span style="font-size: 15.5px; opacity: .78;">וואטסאפ: [מספר]</span>
+          <span style="font-size: 15.5px; opacity: .78;">טלפון: [מספר]</span>
+          <span style="font-size: 15.5px; opacity: .78;">מייל: [כתובת מייל]</span>
+          <span style="font-size: 15.5px; opacity: .78;">איסוף עצמי: [כתובת], [שעות]</span>
+        </div>
+      </div>
+      <div style="height: 1px; background: rgba(242,228,204,.16); margin: 34px 0 20px;"></div>
+      <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px; opacity: .62;">
+        <span>© 2026 שרה חריפים · ח.פ [מספר]</span>
+        <span>תשלום מאובטח: אשראי · ביט · העברה בנקאית · מזומן באיסוף</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
